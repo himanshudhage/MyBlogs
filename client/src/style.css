@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-header {
+    width: 100%;
+    height: 40px;
+    padding: 15px 25px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(79deg, rgb(3, 3, 154), rgb(207, 8, 41), rgb(4, 4, 150));
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.signup_container, .post_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.signup_form {
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.signup_form form input {
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 2px;
+    width: 100%;
+    border: 1px solid rgb(216, 213, 213);
+}
+
+.signup_form form button, .signup_form button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(216, 213, 213);
+}
+
+.signup_form form button {
+    background-color: rgb(17, 80, 227);
+    color: white;
+}
+
+.signup_form button {
+    background-color: rgb(3, 177, 18);
+    color: white;
+}
+
+.signup_btn {
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn_input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.post_form {
+    width: 50%;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.post_form input, .post_form textarea, .post_form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+.post_form .file {
+    border: 1px solid gray;
+}
+
+.post_form button {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+.posts_container {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 80%;
+    margin: 10px 0;
+    border: 1px solid gray;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    height: auto; /* Set height to auto to adjust based on content */
+}
+
+.post img {
+    width: 100%;
+    height: 140px; /* Set height to 140px, which is approximately 30% smaller than 200px */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.post .post_text {
+    margin-top: 10px;
+}
+
+.post_post {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 20px 0;
+}
+
+.post_post img {
+    width: 100%;
+    height: 315px; /* Reduced height by 30% from 450px */
+}
+
+.post_post button {
+    width: 10%;
+}
+
+.o {
+    display: flex;
+    gap: 40px;
+}

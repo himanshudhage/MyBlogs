@@ -1,0 +1,93 @@
+/* General styling */
+.post_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    padding: 20px;
+}
+
+/* Post content box */
+.post_content {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Post image */
+.post_content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Title */
+.post_content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.post_content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Edit & Delete buttons container */
+.post_content div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Edit button */
+.post_content a {
+    text-decoration: none;
+    color: white;
+    background: #3498db;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.post_content a:hover {
+    background: #217dbb;
+}
+
+/* Delete button */
+.post_content button {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.post_content button:hover {
+    background: #c0392b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .post_content {
+        max-width: 90%;
+    }
+}
+.post_form
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}

@@ -1,0 +1,92 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Container for Centering the Form */
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Login Form Box */
+.signup_form {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+/* Heading */
+.signup_form h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2a5298;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.signup_form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+.signup_form input:focus {
+  border-color: #2a5298;
+  box-shadow: 0px 0px 5px rgba(42, 82, 152, 0.5);
+}
+
+/* Login Button */
+.signup_btn {
+  width: 100%;
+  background: #2a5298;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+/* Button Hover Effect */
+.signup_btn:hover {
+  background: #1e3c72;
+}
+
+/* Signup Link */
+.signup_form p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.signup_form a button {
+  background: none;
+  border: 1px solid #2a5298;
+  color: #2a5298;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup_form a button:hover {
+  background: #2a5298;
+  color: white;
+}
