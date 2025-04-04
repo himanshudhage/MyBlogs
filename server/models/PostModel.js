@@ -1,14 +1,22 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const PostSchema = new mongoose.Schema({
     title: String,
     description: String,
     file: String,
-    email:String
-})
+    email: String,
+    username: String,
+    likes: {
+        type: Number,
+        default: 0
+    },
+    comments: [
+        {
+            user: String,
+            text: String,
+            timestamp: String
+        }
+    ]
+}, { timestamps: true });
 
-const PostModel = mongoose.model('posts', PostSchema)
-
-module.exports = PostModel; 
-
-//email added beacuse not one should edit it other than user
+module.exports = mongoose.model('Post', PostSchema);

@@ -18,12 +18,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <h3>Blog App</h3>
-      </div>
+    <div style={{borderRadius:"none"}}className="navbar">
+  
+        <Link to="/" className="logo">
+          <h3>BlogSphere</h3>
+        </Link>
+
       <div className="navbar-links">
-        <Link to="/" className="navbar-link">
+        <Link to="/blogs" className="navbar-link">
           Home
         </Link>
         {user.username && (
@@ -31,24 +33,31 @@ function Navbar() {
             Create
           </Link>
         )}
-        <a href="#" className="navbar-link">
+        {/* <Link to="/l" className="navbar-link">
+          Blogs
+        </Link> */}
+        <Link to="/about" className="navbar-link">
+          About
+        </Link>
+        <Link to="/contact" className="navbar-link">
           Contact
-        </a>
+        </Link>
       </div>
       <div className="navbar-auth">
         {user.username ? (
-          <button onClick={handleLogout} className="navbar-btn">
-            Logout
-          </button>
+          <>
+            <span className="navbar-user">Welcome, {user.username}</span>
+            <button onClick={handleLogout} className="navbar-btn">
+              Logout
+            </button>
+          </>
         ) : (
-          <h5>
-            <Link to="/register" className="navbar-link navbar-login">
-              Register/Login
-            </Link>
-          </h5>
+          <Link to="/register" className="navbar-link">
+            Register/Login
+          </Link>
         )}
       </div>
-    </nav>
+    </div>
   );
 }
 

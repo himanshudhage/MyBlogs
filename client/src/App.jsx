@@ -2,8 +2,11 @@ import { useState ,useEffect } from 'react'
 import './App.css'
 import Login from './Login'
 import Navbar from './Navbar'
-import Home from './Home'
+import BlogsList from './BlogsList'
 import Post from './Post'
+import About from './About'
+import Explore from './Explore'
+import Contact from './Contact'
 import EditPost from './EditPost'
 import Register from './Register'
 import { createContext } from 'react'
@@ -19,7 +22,7 @@ axios.defaults.withCredentials = true;
 
   useEffect(() => {
    axios.get('http://localhost:3001/')
-   .then(user=>{
+   .then(user=>{ 
     setUser(user.data)
    })
    .catch(err=>console.log(err))
@@ -27,12 +30,15 @@ axios.defaults.withCredentials = true;
   
   return (
     <userContext.Provider value={user}>
-      <BrowserRouter>
+      <BrowserRouter>  
       <Navbar/>
       <Routes>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/" element={<Explore/>}></Route>
         <Route path="/register" element={<Register/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/blogs" element={<BlogsList/>}></Route>
         <Route path="/create" element={<CreatePost/>}></Route>
         <Route path="/post/:id" element={<Post/>}></Route>
         <Route path="/editpost/:id" element={<EditPost/>}></Route>

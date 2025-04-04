@@ -20,7 +20,7 @@ const Create = () => {
         axios.post('http://localhost:3001/create', formData)
             .then(res => {
                 if (res.data === "Success") {
-                    window.location.href = "/";
+                    window.location.href = "/blogs";
                 }
             })
             .catch(err => console.log(err));
@@ -52,7 +52,7 @@ const Create = () => {
                         placeholder="Select File"
                         onChange={e => setFile(e.target.files[0])}
                     />
-                    <button style={{backgroundColor:"yellowgreen",border:"none"}} type="submit">Post</button>
+                    <button style={{backgroundColor:" background-color: #00c6ff;",border:"none"}} type="submit">Post</button>
                 </form>
             </div>
         </div>

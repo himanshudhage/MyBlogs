@@ -93,7 +93,7 @@
 
 .post_form button {
     cursor: pointer;
-    background-color: green;
+    background-color: #00c6ff;
     color: white;
 }
 
@@ -146,3 +146,140 @@
     display: flex;
     gap: 40px;
 }
+.signup_form {
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.signup_form h2 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.signup_form form input {
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+}
+
+.signup_form form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.signup_form form button {
+    background-color: #00bcd4;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    transition: 0.3s;
+}
+
+.signup_form form button:hover {
+    background: #0097a7;
+    transform: scale(1.05);
+}
+
+.signup_form button {
+    background: transparent;
+    border: 2px solid #00bcd4;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup_form button:hover {
+    background: #00bcd4;
+    color: white;
+    transform: scale(1.05);
+}
+
+.signup_form p {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: white;
+}
+.post_container {
+    padding: 60px 20px;
+    background: #121212;
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .post_form {
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  .post_form h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    color: #00c6ff;
+    text-align: center;
+  }
+  
+  /* Inputs & Textarea */
+  .post_form input[type="text"],
+  .post_form textarea,
+  .post_form input[type="file"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    transition: border-color 0.3s ease;
+  }
+  
+  .post_form input:focus,
+  .post_form textarea:focus {
+    border-color: #00e0ff;
+    outline: none;
+  }
+  
+  /* Button */
+  .post_form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00c6ff;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .post_form button:hover {
+    background-color: #00aacc;
+  }
+  

@@ -1,71 +1,73 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* Navbar Container */
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #000000, #000000);
-  padding: 15px 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  font-family: 'Poppins', sans-serif;
+  padding: 15px 20px;
+  background: #222;
+  color: white;
+  border-radius: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo Section */
 .navbar-logo h3 {
-  color: white;
-  font-size: 26px;
-  font-weight: 600;
-  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
   letter-spacing: 1px;
 }
 
-/* Links Section */
 .navbar-links {
   display: flex;
   gap: 20px;
 }
 
 .navbar-link {
-  text-decoration: none;
   color: white;
-  font-size: 18px;
-  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
   transition: all 0.3s ease;
-  padding: 8px 15px;
+  padding: 8px 12px;
   border-radius: 5px;
 }
 
 .navbar-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  font-weight: 600;
+  color: #00bcd4;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
 }
 
-/* Register/Login */
-.navbar-login {
-  font-weight: 600;
-}
-
-/* Auth Section */
 .navbar-auth {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
-/* Logout Button */
+.navbar-user {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
 .navbar-btn {
-  background-color: #ff4b5c;
+  background: #00bcd4;
   color: white;
   border: none;
-  padding: 10px 18px;
+  padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .navbar-btn:hover {
-  background-color: #e04351;
+  background: #0097a7;
+}
+
+.navbar-login {
+  font-weight: bold;
+}
+.logo
+{
+  color: azure;
+  list-style: none;
+  text-decoration: none;
 }

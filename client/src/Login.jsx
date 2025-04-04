@@ -15,7 +15,7 @@ function Login() {
         .then(res => {
             if(res.data === "Success") {
                 //login kelyavar logout option yetil
-                window.location.href = "/"
+                window.location.href = "/blogs"
                 //move to main page or front page
             }
         })
